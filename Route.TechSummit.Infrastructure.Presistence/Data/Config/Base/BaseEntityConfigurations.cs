@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Route.TechSummit.Domain.Common;
+﻿using Route.TechSummit.Domain.Common;
 
 namespace Route.TechSummit.Infrastructure.Presistence.Data.Config.Base
 {

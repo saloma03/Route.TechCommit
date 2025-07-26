@@ -7,7 +7,7 @@ using Route.TechSummit.Domain.Common;
 
 namespace Route.TechSummit.Domain.Entities
 {
-    public class OrderItem : BaseAuditableEntity<int>
+    public class OrderItem : BaseEntity<int>
     {
         public int OrderId { get; set; }
         public Order Order { get; set; }
