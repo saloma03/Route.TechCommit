@@ -12,7 +12,6 @@ namespace Route.TechSummit.Domain.Entities
     {
         public int CustomerId { get; set; }
         public Customer Customer { get; set; }
-        public DateTime OrderDate { get; set; }
         public decimal TotalAmount { get; set; }
         public OrderStatus Status { get; set; }
         public PaymentMethod PaymentMethod { get; set; }
