@@ -1,0 +1,6 @@
+@Route.TechCommit.Apis_HostAddress = http://localhost:5203
+
+GET {{Route.TechCommit.Apis_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
