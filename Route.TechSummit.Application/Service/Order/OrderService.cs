@@ -59,12 +59,12 @@ namespace Route.TechSummit.Application.Service.order
 
             // 3. Create order
             await _repositoryManager.OrderRepository.AddAsync(order);
-            await _repositoryManager.UnitOfWork.SaveChangesAsync();
+            await _repositoryManager.UnitOfWork.CompleteAsync();
 
             // 4. Generate invoice (simplified for now)
             var invoice = new InvoiceCreateDto { OrderId = order.Id };
             await _repositoryManager.InvoiceRepository.AddAsync(_mapper.Map<Invoice>(invoice));
-            await _repositoryManager.UnitOfWork.SaveChangesAsync();
+            await _repositoryManager.UnitOfWork.CompleteAsync();
 
             return _mapper.Map<OrderDto>(order);
         }
@@ -91,13 +91,13 @@ namespace Route.TechSummit.Application.Service.order
             }
             _mapper.Map(orderDto, order);
             await _repositoryManager.OrderRepository.UpdateAsync(order);
-            await _repositoryManager.UnitOfWork.SaveChangesAsync();
+            await _repositoryManager.UnitOfWork.CompleteAsync();
         }
 
         public async Task DeleteOrderAsync(int orderId)
         {
             await _repositoryManager.OrderRepository.DeleteAsync(orderId);
-            await _repositoryManager.UnitOfWork.SaveChangesAsync();
+            await _repositoryManager.UnitOfWork.CompleteAsync();
         }
     }
 }
