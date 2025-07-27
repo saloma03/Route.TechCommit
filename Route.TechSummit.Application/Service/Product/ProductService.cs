@@ -7,9 +7,10 @@ using AutoMapper;
 using Route.TechSummit.Abstraction.Services;
 using Route.TechSummit.Application.DTOs.ProductDTOs;
 using Route.TechSummit.Domain.Contracts;
+using Route.TechSummit.Domain.Entities;
 using Route.TechSummit.Infrastructure.Repository;
 
-namespace Route.TechSummit.Application.Service.Product
+namespace Route.TechSummit.Application.Service.product
 {
     public class ProductService : IProductService
     {
@@ -38,7 +39,7 @@ namespace Route.TechSummit.Application.Service.Product
         {
             var product = _mapper.Map<Product>(productDto);
             await _repositoryManager.ProductRepository.AddAsync(product);
-            await _repositoryManager.UnitOfWork.SaveChangesAsync();
+            await _repositoryManager.UnitOfWork.CompleteAsync();
             return _mapper.Map<ProductDto>(product);
         }
 
@@ -52,13 +53,13 @@ namespace Route.TechSummit.Application.Service.Product
             }
             _mapper.Map(productDto, product);
             await _repositoryManager.ProductRepository.UpdateAsync(product);
-            await _repositoryManager.UnitOfWork.SaveChangesAsync();
+            await _repositoryManager.UnitOfWork.CompleteAsync();
         }
 
         public async Task DeleteProductAsync(int id)
         {
             await _repositoryManager.ProductRepository.DeleteAsync(id);
-            await _repositoryManager.UnitOfWork.SaveChangesAsync();
+            await _repositoryManager.UnitOfWork.CompleteAsync();
         }
     }
 }

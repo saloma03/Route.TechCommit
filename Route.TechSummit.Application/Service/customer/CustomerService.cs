@@ -25,7 +25,7 @@ namespace Route.TechSummit.Application.Service.Customer
         {
             var customer = _mapper.Map<Domain.Entities.Customer>(customerDto);
             await _repositoryManager.CustomerRepository.AddAsync(customer);
-            await _repositoryManager.UnitOfWork.SaveChangesAsync();
+            await _repositoryManager.UnitOfWork.CompleteAsync();
             return _mapper.Map<CustomerDto>(customer);
         }
 
@@ -57,13 +57,13 @@ namespace Route.TechSummit.Application.Service.Customer
             }
             _mapper.Map(customerDto, customer);
             await _repositoryManager.CustomerRepository.UpdateAsync(customer);
-            await _repositoryManager.UnitOfWork.SaveChangesAsync();
+            await _repositoryManager.UnitOfWork.CompleteAsync();
         }
 
         public async Task DeleteCustomerAsync(int id)
         {
             await _repositoryManager.CustomerRepository.DeleteAsync(id);
-            await _repositoryManager.UnitOfWork.SaveChangesAsync();
+            await _repositoryManager.UnitOfWork.CompleteAsync();
         }
     }
 }
