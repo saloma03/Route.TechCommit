@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Route.TechSummit.Abstraction.DTOs.ProductDTOs;
+﻿using Route.TechSummit.Application.DTOs.ProductDTOs;
+
 namespace Route.TechSummit.Abstraction.Services
 {
     public interface IProductService
     {
         Task<IEnumerable<ProductDto>> GetAllProductsAsync();
-        Task<ProductDto> GetProductByIdAsync(Guid id);
+        Task<ProductDto> GetProductByIdAsync(int id);
         Task<ProductDto> CreateProductAsync(ProductCreateDto productDto);
-        Task UpdateProductAsync(Guid id, ProductUpdateDto productDto);
-        Task DeleteProductAsync(Guid id);
+        Task UpdateProductAsync(int id, ProductUpdateDto productDto);
+        Task DeleteProductAsync(int id);
     }
 }

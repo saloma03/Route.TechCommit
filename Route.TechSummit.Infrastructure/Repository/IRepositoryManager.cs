@@ -1,6 +1,16 @@
-﻿namespace Route.TechSummit.Infrastructure.Repository
+﻿using Route.TechSummit.Domain.Contracts;
+using Route.TechSummit.Infrastructure.Presistence.UnitOfWork;
+
+namespace Route.TechSummit.Infrastructure.Repository
 {
-    internal interface IRepositoryManager
+    public interface IRepositoryManager
     {
+        ICustomerRepository CustomerRepository { get; }
+        IOrderRepository OrderRepository { get; }
+        IProductRepository ProductRepository { get; }
+        IInvoiceRepository InvoiceRepository { get; }
+        IUserRepository UserRepository { get; }
+        IUnitOfWork UnitOfWork { get; }
+
     }
 }

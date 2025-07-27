@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Route.TechSummit.Abstraction\Route.TechSummit.Abstraction.csproj" />
+    <ProjectReference Include="..\Route.TechSummit.Application\Route.TechSummit.Application.csproj" />
   </ItemGroup>
 
 </Project>
