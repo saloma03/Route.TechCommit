@@ -7,13 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Route.TechSummit.Abstraction\Route.TechSummit.Abstraction.csproj" />
     <ProjectReference Include="..\Route.TechSummit.Domain\Route.TechSummit.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Mapping\" />
     <Folder Include="Service\Order\" />
-    <Folder Include="Service\Product\" />
   </ItemGroup>
 
   <ItemGroup>

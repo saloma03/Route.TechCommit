@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// Application/DependencyInjection.cs
+using Microsoft.Extensions.DependencyInjection;
+using AutoMapper;
+using Route.TechSummit.Application.Mapping;
 
 namespace Route.TechSummit.Application
 {
-    internal class DependencyInjection
+    public static class DependencyInjection
     {
+        public static IServiceCollection AddApplication(this IServiceCollection services)
+        {
+            services.AddAutoMapper(typeof(MappingProfile));
+
+            // Register other application services
+            return services;
+
+        }
     }
 }

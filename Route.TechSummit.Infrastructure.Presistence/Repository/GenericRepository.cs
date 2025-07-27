@@ -4,7 +4,7 @@ using Route.TechSummit.Infrastructure.Presistence.Data;
 
 namespace Route.TechSummit.Infrastructure.Presistence.Repository
 {
-    internal class GenericRepository<TEntity, TKey> : IGenericRepository<TEntity, TKey>
+    public class GenericRepository<TEntity, TKey> : IGenericRepository<TEntity, TKey>
         where TEntity : BaseEntity<TKey>
         where TKey : IEquatable<TKey>
     {
