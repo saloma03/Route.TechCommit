@@ -12,7 +12,8 @@
 
   <ItemGroup>
     <Folder Include="Mapping\" />
-    <Folder Include="Services\Products\" />
+    <Folder Include="Service\Order\" />
+    <Folder Include="Service\Product\" />
   </ItemGroup>
 
   <ItemGroup>

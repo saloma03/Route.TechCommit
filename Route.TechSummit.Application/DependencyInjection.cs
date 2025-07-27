@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Route.TechSummit.Application.Services
+namespace Route.TechSummit.Application
 {
-    internal class ServiceManager
+    internal class DependencyInjection
     {
     }
 }
