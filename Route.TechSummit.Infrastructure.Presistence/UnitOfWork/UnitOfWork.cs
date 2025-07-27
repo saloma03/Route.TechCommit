@@ -6,7 +6,7 @@ using Route.TechSummit.Infrastructure.Presistence.Repository;
 
 namespace Route.TechSummit.Infrastructure.Presistence.UnitOfWork
 {
-    internal class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly TechSummitDbContext _dbContext;
         private readonly ConcurrentDictionary<Type, object> _repositories;

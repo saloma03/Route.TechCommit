@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Route.TechSummit.Domain\Route.TechSummit.Domain.csproj" />
+    <ProjectReference Include="..\Route.TechSummit.Infrastructure.Presistence\Route.TechSummit.Infrastructure.Presistence.csproj" />
+  </ItemGroup>
+
 </Project>
