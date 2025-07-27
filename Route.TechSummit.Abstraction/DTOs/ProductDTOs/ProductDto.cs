@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Route.TechSummit.Abstraction.DTOs.ProductDTOs
+namespace Route.TechSummit.Application.DTOs.ProductDTOs
 {
     public class ProductDto
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
         public int Stock { get; set; }

@@ -9,10 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Route.TechSummit.Abstraction\Route.TechSummit.Abstraction.csproj" />
     <ProjectReference Include="..\Route.TechSummit.Domain\Route.TechSummit.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Service\Order\" />
+    <ProjectReference Include="..\Route.TechSummit.Infrastructure\Route.TechSummit.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

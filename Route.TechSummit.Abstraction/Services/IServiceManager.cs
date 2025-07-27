@@ -9,7 +9,8 @@ namespace Route.TechSummit.Abstraction.Services
     public class IServiceManager 
     {
         IProductService ProductService { get; }
-        //IOrderService OrderService { get; }
-        //IUserService UserService { get; }
+        ICustomerService CustomerService { get; }
+        IOrderService OrderService { get; }
+        IUserService UserService { get; }
     }
 }
