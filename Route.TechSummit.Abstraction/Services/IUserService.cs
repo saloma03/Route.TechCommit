@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Route.TechSummit.Abstraction.DTOs.UserDTOs;
+﻿using Route.TechSummit.DTOs.UserDTOs;
 
 namespace Route.TechSummit.Abstraction.Services
 {
@@ -14,6 +9,7 @@ namespace Route.TechSummit.Abstraction.Services
         Task<UserDto> GetUserByIdAsync(int userId);
         Task<IEnumerable<UserDto>> GetAllUsersAsync();
         Task UpdateUserAsync(int id, UserCreateDto userDto);
-        Task DeleteUserAsync(int id);a
+        Task DeleteUserAsync(int id);
+
     }
 }

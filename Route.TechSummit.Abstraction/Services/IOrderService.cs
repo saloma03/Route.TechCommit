@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Route.TechSummit.Abstraction.DTOs.OrderDTOs;
-using Route.TechSummit.Application.DTOs.OrderDTOs;
+﻿using Route.TechSummit.DTOs.OrderDTOs;
 
 namespace Route.TechSummit.Abstraction.Services
 {
@@ -13,5 +9,7 @@ namespace Route.TechSummit.Abstraction.Services
         Task<IEnumerable<OrderDto>> GetAllOrdersAsync();
         Task UpdateOrderStatusAsync(int orderId, OrderUpdateDto orderDto);
         Task DeleteOrderAsync(int orderId);
+
+
     }
 }

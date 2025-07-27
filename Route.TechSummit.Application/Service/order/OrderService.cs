@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
-using Route.TechSummit.Abstraction.DTOs.InvoiceDTOs;
+﻿using AutoMapper;
 using Route.TechSummit.Abstraction.Services;
-using Route.TechSummit.Application.DTOs.OrderDTOs;
 using Route.TechSummit.Domain.Entities;
 using Route.TechSummit.Domain.Enum;
+using Route.TechSummit.DTOs.InvoiceDTOs;
+using Route.TechSummit.DTOs.OrderDTOs;
 using Route.TechSummit.Infrastructure.Repository;
 
 namespace Route.TechSummit.Application.Service.order

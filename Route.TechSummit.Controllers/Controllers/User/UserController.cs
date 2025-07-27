@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Route.TechSummit.Abstraction.DTOs.UserDTOs;
+﻿using Microsoft.AspNetCore.Mvc;
 using Route.TechSummit.Abstraction.Services;
 using Route.TechSummit.Controllers.Controllers.Base;
+using Route.TechSummit.DTOs.UserDTOs;
 
 namespace Route.TechSummit.Controllers
 {

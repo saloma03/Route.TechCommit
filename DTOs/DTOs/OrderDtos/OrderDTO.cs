@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Route.TechSummit.Domain.Enum;
 
-using System;
-using System.Collections.Generic;
-using Route.TechSummit.Domain.Enum;
-
-namespace Route.TechSummit.Application.DTOs.OrderDTOs
+namespace Route.TechSummit.DTOs.OrderDTOs
 {
     public class OrderDto
     {
@@ -45,7 +37,7 @@ namespace Route.TechSummit.Application.DTOs.OrderDTOs
 
     public class OrderItemCreateDto
     {
-        public  int ProductId { get; set; }
+        public int ProductId { get; set; }
         public int Quantity { get; set; }
     }
 }

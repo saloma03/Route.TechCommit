@@ -1,4 +1,5 @@
 ﻿using Route.TechSummit.Domain.Contracts;
+using Route.TechSummit.Domain.Entities;
 using Route.TechSummit.Infrastructure.Presistence.Data;
 
 namespace Route.TechSummit.Infrastructure.Presistence.Repository

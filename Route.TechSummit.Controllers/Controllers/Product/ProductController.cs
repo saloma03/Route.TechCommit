@@ -2,8 +2,8 @@
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Route.TechSummit.Abstraction.Services;
-using Route.TechSummit.Application.DTOs.ProductDTOs;
 using Route.TechSummit.Controllers.Controllers.Base;
+using Route.TechSummit.DTOs.ProductDTOs;
 
 namespace Route.TechSummit.Controllers.Controllers.Product
 {

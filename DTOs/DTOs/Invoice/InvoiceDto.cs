@@ -1,4 +1,4 @@
-﻿namespace Route.TechSummit.Abstraction.DTOs.InvoiceDTOs
+﻿namespace Route.TechSummit.DTOs.InvoiceDTOs
 {
     public class InvoiceDto
     {

@@ -1,8 +1,6 @@
-
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
+using Route.TechSummit.Application;
+using Route.TechSummit.Infrastructure.Extensions;
 using Route.TechSummit.Infrastructure.Presistence;
-using Route.TechSummit.Infrastructure.Presistence.Data;
 
 namespace Route.TechCommit.Apis
 {
@@ -21,7 +19,10 @@ namespace Route.TechCommit.Apis
 
             builder.Services.AddPresistenceServices(builder.Configuration);
 
-
+            builder.Services.AddInfrastructure(builder.Configuration);
+            builder.Services.AddApplicationLayer(builder.Configuration);
+            
+            
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

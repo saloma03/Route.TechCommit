@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Route.TechSummit.Application.DTOs;
-using Route.TechSummit.Application.DTOs.CustomerDTOs;
-using Route.TechSummit.Application.DTOs.OrderDTOs;
+﻿using Route.TechSummit.DTOs.CustomerDTOs;
+using Route.TechSummit.DTOs.OrderDTOs;
+
 namespace Route.TechSummit.Abstraction.Services
 {
     public interface ICustomerService

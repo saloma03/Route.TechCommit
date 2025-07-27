@@ -7,6 +7,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Route.TechSummit.Infrastructure.Presistence.Data;
+using Route.TechSummit.Infrastructure.Presistence.UnitOfWork;
+using Route.TechSummit.Infrastructure.Repository;
 
 namespace Route.TechSummit.Infrastructure.Extensions
 {
@@ -14,10 +16,8 @@ namespace Route.TechSummit.Infrastructure.Extensions
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<TechSummitDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
-
-            services.AddScoped<IUn, RepositoryManager>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IRepositoryManager, RepositoryManager>();
 
             return services;
         }
