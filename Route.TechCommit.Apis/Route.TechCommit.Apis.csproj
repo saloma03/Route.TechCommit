@@ -14,11 +14,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
+    <ProjectReference Include="..\Route.TechSummit.Infrastructure.Presistence\Route.TechSummit.Infrastructure.Presistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Route.TechSummit.Infrastructure.Presistence\Route.TechSummit.Infrastructure.Presistence.csproj" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
