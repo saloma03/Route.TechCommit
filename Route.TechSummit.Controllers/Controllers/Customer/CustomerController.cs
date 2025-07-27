@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Route.TechSummit.Abstraction.Services;
-using Route.TechSummit.Application.DTOs.CustomerDTOs;
 using Route.TechSummit.Controllers.Controllers.Base;
+using Route.TechSummit.DTOs.CustomerDTOs;
 
 namespace Route.TechSummit.Controllers
 {

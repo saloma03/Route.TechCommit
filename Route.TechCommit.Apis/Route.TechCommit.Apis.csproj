@@ -14,7 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Route.TechSummit.Application\Route.TechSummit.Application.csproj" />
     <ProjectReference Include="..\Route.TechSummit.Infrastructure.Presistence\Route.TechSummit.Infrastructure.Presistence.csproj" />
+    <ProjectReference Include="..\Route.TechSummit.Infrastructure\Route.TechSummit.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

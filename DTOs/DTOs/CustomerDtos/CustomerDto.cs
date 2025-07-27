@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Route.TechSummit.Application.DTOs.OrderDTOs;
+﻿using Route.TechSummit.DTOs.OrderDTOs;
 
-namespace Route.TechSummit.Application.DTOs.CustomerDTOs
+namespace Route.TechSummit.DTOs.CustomerDTOs
 {
     public class CustomerDto
     {

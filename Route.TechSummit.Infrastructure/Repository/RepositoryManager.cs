@@ -1,9 +1,7 @@
-﻿using Route.TechSummit.Domain.Contracts;
-using Route.TechSummit.Domain.Entities;
-using Route.TechSummit.Infrastructure.Presistence.Data;
+﻿using Route.TechSummit.Infrastructure.Presistence.Data;
 using Route.TechSummit.Infrastructure.Presistence.UnitOfWork;
 using Route.TechSummit.Infrastructure.Presistence.Repository;
-using Route.TechSummit.Infrastructure.Presistence.Repository;
+using Route.TechSummit.Domain.Contracts;
 
 namespace Route.TechSummit.Infrastructure.Repository
 {

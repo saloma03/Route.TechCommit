@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Route.TechSummit.Abstraction.Services;
-using Route.TechSummit.Application.DTOs.ProductDTOs;
-using Route.TechSummit.Domain.Contracts;
 using Route.TechSummit.Domain.Entities;
+using Route.TechSummit.DTOs.ProductDTOs;
 using Route.TechSummit.Infrastructure.Repository;
 
 namespace Route.TechSummit.Application.Service.product

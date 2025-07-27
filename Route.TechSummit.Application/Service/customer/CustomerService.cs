@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Route.TechSummit.Abstraction.Services;
-using Route.TechSummit.Application.DTOs.CustomerDTOs;
-using Route.TechSummit.Application.DTOs.OrderDTOs;
+using Route.TechSummit.DTOs.CustomerDTOs;
+using Route.TechSummit.DTOs.OrderDTOs;
 using Route.TechSummit.Infrastructure.Repository;
+
+
+
 namespace Route.TechSummit.Application.Service.Customer
 {
     public class CustomerService : ICustomerService
@@ -65,5 +63,8 @@ namespace Route.TechSummit.Application.Service.Customer
             await _repositoryManager.CustomerRepository.DeleteAsync(id);
             await _repositoryManager.UnitOfWork.CompleteAsync();
         }
+
+
+
     }
 }

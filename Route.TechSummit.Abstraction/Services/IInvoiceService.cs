@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+
+using Route.TechSummit.DTOs.InvoiceDTOs;
+
 namespace Route.TechSummit.Abstraction.Services
 {
     public interface IInvoiceService
@@ -14,6 +13,7 @@ namespace Route.TechSummit.Abstraction.Services
         Task DeleteInvoiceAsync(int invoiceId);
     }
 }
+
 
 
 
